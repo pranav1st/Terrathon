@@ -1,0 +1,88 @@
+import React from 'react';
+import { Button, Col, Form, Row } from 'react-bootstrap';
+import './Forms2.css';
+import './Form2_valid.js';
+function Forms2() {
+    return (
+        <div id="body">
+                <div className="form-body">
+        <div className="row">
+            <div className="form-holder">
+                <div className="form-content">
+                    <div className="form-items">
+                        <h3>Food requirements:</h3>
+                        <p>Fill in the data below</p>
+                        <form className="requires-validation" Validate>
+
+                            <div className="col-md-12">
+                               <input className="form-control" type="number" name="num" placeholder="No. of people" min="1" required/>
+                               {/* <div className="valid-feedback">Requirement field is valid!</div>
+                               <div className="invalid-feedback">Requirement field cannot be blank!</div> */}
+                            </div>
+                               
+                            <div className="col-md-12">
+                                <input className="form-control" type="text" name="address1" placeholder="Address Line 1" required/>
+                                 {/* <div className="valid-feedback">address1 field is valid!</div>
+                                 <div className="invalid-feedback">address1 field cannot be blank!</div> */}
+                            </div>
+                            
+
+                            <div className="col-md-12">
+                                <input className="form-control" type="text" name="address2" placeholder="Address Line 2" required/>
+                                 {/* <div className="valid-feedback">address2 field is valid!</div>
+                                 <div className="invalid-feedback">address2 field cannot be blank!</div> */}
+                            </div>
+                            <br></br>
+
+                            <div className="col-md-12">
+                                <input className="form-control" type="text" name="pincode" placeholder="Pincode" pattern="[0-9]{6}" maxlength="6" required/>
+                                 {/* <div className="valid-feedback">Pincode field is valid!</div>
+                                 <div className="invalid-feedback">Pincode field cannot be blank!</div> */}
+                            </div>
+
+                           <div className="col-md-12">
+                                <select className="form-select mt-3" required>
+                                <option selected disabled value="">Select City</option>
+                                      <option value="blore">Bengaluru</option>
+                                      <option value="mys">Mysuru</option>
+                                      <option value="mumbai">Mumbai</option>
+                               </select>
+                               {/* <div className="valid-feedback">You selected a city!</div>
+                                <div className="invalid-feedback">Please select a city!</div> */}
+                           </div>
+
+                        
+                        <div className="form-check">
+                            <input className="form-check-input" id="veg" type="checkbox" name="veg"/>
+                            <label for="veg">VEG food only</label>
+                            {/*<div className="valid-feedback">Username field is valid!</div>
+                            <div className="invalid-feedback">Username field cannot be blank!</div>*/}
+                        </div>
+
+
+                    
+
+                        {/* <div className="form-check">
+                          <input className="form-check-input" type="checkbox" value="Veg food only" placeholder="Veg food only"/>
+                          <label className="form-check-label">Veg food only</label>
+                         <div className="invalid-feedback">Please confirm that the entered data are all correct!</div>
+                        </div> */}
+                  
+
+                            <div className="form-button mt-3">
+                                {/* <button id="submit" type="submit" className="btn btn-primary">Submit</button> */}
+                                <input type="submit" id="submit" className="btn btn-primary" value="Submit"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+            </div>
+        )
+    }
+    export default Forms2
