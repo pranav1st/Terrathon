@@ -10,6 +10,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< Updated upstream
     "nodemon": "^2.0.15"
+=======
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "express-timestamp": "^0.1.4",
+    "express-validator": "^6.14.0",
+    "firebase": "^9.6.10",
+    "firebase-admin": "^10.0.2",
+    "nodemon": "^2.0.15",
+    "react-slick": "^0.28.1"
+>>>>>>> Stashed changes
   }
 }
